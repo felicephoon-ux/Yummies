@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUMMIES-CharKueyTeow</title>
+    <link rel="stylesheet" href="navigationMenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="CharKueyTeow.css">
+</head>
+
+<body>
+    <header>
+        <div class="navpage">
+            <a href="HomePage.html" class="yummies-logo">
+                <img src="photo/YummiesLogo.jpeg" alt="YummiesLogo">
+            </a>
+
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <nav class="nav-links">
+                <a href="HomePage.html">Home</a>
+                <a href="NasiLemak.html">Nasi Lemak</a>
+                <a href="CharKueyTeow.html">Char Kuey Teow</a>
+                <a href="SatayCelup.html">Satay Celup</a>
+                <a href="AsamLaksa.html">Asam Laksa</a>
+                <a href="BeanSproutsChicken.html">Bean Sprouts Chicken</a>
+                <a href="Rating.html">Rating</a>
+                <a href="AboutUs.html">About Us</a>
+            </nav>
+        </div>
+
+        <a href="LoginPage.html" class="login-icon">
+            Login<br>Here
+        </a>
+    </header>>
+
+    <section class="video">
+        <div class="video-container">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/8qgWi1j-NYE?start=5"
+                title="Char Kuey Teow Video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <div class="food-section">
+        <div class="food-image">
+            <img src="photo/CharKueyTeowTitle.jpg" alt="Char Kuey Teow">
+        </div>
+        <div class="titleText">
+            <h1 class="gradientTitle">
+                𝓣𝓱𝓮 𝓘𝓬𝓸𝓷𝓲𝓬 𝓢𝓽𝓻𝓮𝓮𝓽 𝓕𝓸𝓸𝓭 𝓸𝓯 𝓟𝓮𝓷𝓪𝓷𝓰
+            </h1>
+            <h2 style="font-size:45px; color:gold; text-shadow:2px 2px 6px #444; margin-top:10px; text-align: center;">
+                🍜 𝑪𝒉𝒂𝒓 𝑲𝒖𝒆𝒚 𝑻𝒆𝒐𝒘 🍜
+            </h2>
+        </div>
+    </div>
+
+    <main>
+        <section class="intro">
+            <p class="special-paragraph">
+                Char Kuey Teow is one of the most famous dishes in Penang, known for its smoky aroma,
+                rich soy sauce, fresh prawns, cockles, bean sprouts, and flat rice noodles fried to perfection.
+            </p>
+        </section>
+        <section class="restaurants">
+            <h2>Famous Char Kuey Teow Spots</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="image-slider">
+                        <div class="photo-gallery">
+                            <img src="photo/CharKueyTeow1.jpg" alt="Image 1">
+                            <img src="photo/CharKueyTeow2.jpg" alt="Image 2">
+                            <img src="photo/CharKueyTeow3.jpg" alt="Image 3">
+                        </div>
+
+                    </div>
+                    <h3>Siam Road Charcoal Char Kuey Teow</h3>
+                    <p>Known as the birthplace of authentic Char Kuey Teow with wok hei (smoky flavour).</p>
+
+                    <div class="address-info-horizontal">
+                        <div class="info-block">
+                            <h4>Address</h4>
+                            <div class="address">
+                                82, Jalan Siam,<br />
+                                George Town,<br />
+                                10400 George Town,<br />
+                                Pulau Pinang
+                            </div>
+                        </div>
+                        <div class="info-buttons">
+                            <button class="button button1" onclick="toggleInfo(this)">📅 Operating Hours</button>
+                            <p class="info-detail">Closed ⋅ Opens 12 pm Wed</p>
+
+                            <button class="button button1" onclick="toggleInfo(this)">💰 Price per person</button>
+                            <p class="info-detail">RM 1–20</p>
+                        </div>
+
+                        <div class="ratings">
+                            <span class="rating-score">Ratings: 4.2</span>
+                            <span class="rating-star">⭐</span>
+                            <span class="rating-star">⭐</span>
+                            <span class="rating-star">⭐</span>
+                            <span class="rating-star">⭐</span>
+                            <span class="rating-count">(2.2K)</span>
+                        </div>
+
+                        <div class="siam-road-story">
+                            <h2>🛵🔥 The Sizzling Story of Siam Road Charcoal Char Kuey Teow 🍜✨</h2>
+
+                            <p>Once upon a time, on the tasty streets of <strong>Penang, Malaysia</strong> 🇲🇾, a
+                                small pushcart
+                                rolled onto <strong>Siam Road</strong> 🛣️. From it came a smell so delicious,
+                                people couldn’t help but
+                                follow their noses... straight to a plate of <strong>Charcoal Char Kuey
+                                    Teow</strong>! 🍤🍳🌶️</p>
+
+                            <p>At the center of it all was <strong>Uncle Tan</strong> 👴🏻 – a kind old uncle with a
+                                big smile and
+                                even bigger flavors. Back in the <strong>1960s</strong>, he started cooking with
+                                just a wok, a ladle,
+                                and a blazing charcoal fire 🔥. No fancy stoves – just old-school magic.</p>
+
+                            <button class="dropdown-btn" onclick="toggleSpecial()">🔎 What made it special?</button>
+
+                            <div id="special-section" class="dropdown-content">
+                                <ul>
+                                    <li>✨ The smoky “<em>wok hei</em>” (the breath of the wok)</li>
+                                    <li>🍜 Slippery flat noodles</li>
+                                    <li>🦐 Juicy prawns</li>
+                                    <li>🐚 Fresh cockles</li>
+                                    <li>🌱 Crunchy bean sprouts</li>
+                                    <li>🌶️ And a spicy sambal kick!</li>
+                                </ul>
+                            </div>
+                            <p>People came from everywhere – uncles on bicycles 🚲, aunties with shopping bags 🛍️,
+                                and even tourists
+                                with big cameras 📸. Soon, <strong>Siam Road</strong> became more than a street – it
+                                was a
+                                <em>must-visit food spot</em>! 🌍❤️
+                            </p>
+                            <p>⏳ <strong>Years passed</strong>, but the fire never went out. Today, <strong>Uncle
+                                    Tan’s son</strong>
+                                has taken over the wok 👨‍🍳🔥. And guess what? The noodles are still just as smoky,
+                                spicy, and totally
+                                unforgettable 💫.</p>
+                            <p><strong>One bite, and you’ll know why this humble cart is a Malaysian
+                                    legend.</strong></p>
+                            <p>🍜❤️🔥 #SiamRoadCharKueyTeow #PenangEats #WokHeiMagic</p>
+                            <img src="photo/CharKueyTeow4.jpg" alt="Siam Road Charcoal Char Kuey Teow"
+                                class="story-image" />
+                        </div>
+                        <section class="char-kuey-teow-description">
+                            <h2>🔥A Taste of Tradition✨</h2>
+                            <p>Tucked in the heart of Penang, our legendary <strong>charcoal-fried Char Kuey
+                                    Teow</strong> is more
+                                than just a dish – it’s a nostalgic journey back to authentic street food 🍲.</p>
+                            <p>Cooked over a blazing <strong>charcoal fire 🔥</strong> for that irresistible <em>wok
+                                    hei</em> (breath
+                                of the wok), every plate is lovingly tossed with silky flat rice noodles 🍜, juicy
+                                prawns 🍤, cockles
+                                🐚, crispy bean sprouts 🌱, and a hint of spicy magic 🌶️.</p>
+                            <p>❤️ Beloved by locals and visitors alike, <strong>Siam Road Char Kuey Teow</strong> is
+                                a humble stall
+                                with a big heart – and an even bigger flavor.</p>
+                            <p>📍 Come taste the legend that generations have lined up for – <em>simple, soulful,
+                                    and
+                                    unforgettable.</em></p>
+                        </section>
+                    </div>
+        </section>
+        <div class="history-section">
+            <h2 class="history-heading">📜 History of Char Kuey Teow</h2>
+            <div class="history-text">
+                <p>🍜 <strong>Char Kuey Teow</strong> first sizzled to life thanks to hardworking Chinese immigrants
+                    in Penang
+                    🇲🇾, who whipped up this tasty noodle dish as a quick, wallet-friendly meal for busy workers.
+                    Over time, it
+                    transformed into a beloved symbol of Penang’s vibrant street food scene 🌟.</p>
+
+                <p>👨‍🍳 Today, this iconic dish is famous for its <em>wok hei</em> — the magical smoky breath of
+                    the wok 🔥.
+                    Imagine silky flat rice noodles 🍜 stir-fried with juicy prawns 🦐, fresh cockles 🐚, fluffy
+                    eggs 🥚, crunchy
+                    bean sprouts 🌱, and fragrant chives 🌿 — all tossed together in pork lard for that unbeatable
+                    flavor punch
+                    💥!</p>
+
+                <p>Every bite is a party for your taste buds 🎉 — smoky, savory, and downright unforgettable!</p>
+                </p>
+            </div>
+        </div>
+        <div id="cookie-banner" class="cookie-banner">
+            <span>This website uses cookies to ensure you get the best experience.</span>
+            <button id="accept-cookies" class="cookie-btn">Accept</button>
+        </div>
+        <footer class="footer">
+            <div class="footerContainer">
+                <div class="footerDisplay">
+                    <h3>Our Company</h3>
+                    <a href="HomePage.html">
+                        <img src="photo/YummiesLogo.jpeg" alt="Company Photo"
+                            style="width:150px; border-radius:12px; transition:transform 0.3s ease;"
+                            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.5)';"
+                            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"></a>
+                </div>
+
+                <div class="footerDisplay">
+                    <h3>Quick Links</h3>
+                    <a href="AboutUs.html" class="footerBox">About Us</a>
+                    <a href="AboutUs.html#messageContact" class="footerBox">Message & Contact</a>
+                    <a href="Rating.html" class="footerBox">Rating</a>
+                    <a href="LoginPage.html" class="footerBox">Login</a>
+                </div>
+
+                <div class="footerDisplay">
+                    <h3>Foods</h3>
+                    <a href="NasiLemak.html" class="footerLink">Nasi Lemak</a>
+                    <a href="CharKueyTeow.html" class="footerLink">Char Kuey Teow</a>
+                    <a href="SatayCelup.html" class="footerLink">Satay Celup</a>
+                    <a href="AsamLaksa.html" class="footerLink">Asam Laksa</a>
+                    <a href="BeanSproutsChicken.html" class="footerLink">Bean Sprouts Chicken</a>
+                </div>
+
+                <div class="footerDisplay">
+                    <h3>Follow Us</h3>
+                    <a href="#" class="footerIcon"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#" class="footerIcon"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#" class="footerIcon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="#" class="footerIcon"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" class="footerIcon"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+
+            </div>
+        </footer>
+        <div class="footerBottom">
+            © 2025 YUMMIES Company. All rights reserved.
+        </div>
+        <script>
+            function getCookie(name) {
+                return document.cookie.split(";").some(item => item.trim().startsWith(name + "="));
+            }
+
+            window.onload = function () {
+                const banner = document.getElementById("cookie-banner");
+                const acceptBtn = document.getElementById("accept-cookies");
+
+
+                if (!getCookie("cookies_accepted")) {
+                    banner.style.display = "block";
+                }
+
+                acceptBtn.onclick = function () {
+                    document.cookie = "cookies_accepted=true; path=/; max-age=" + 60 * 60 * 24 * 30; // 30 天
+                    banner.style.display = "none";
+                };
+            };
+        </script>
+        <script>
+            const heading = document.querySelector('.history-heading');
+            const text = document.querySelector('.history-text');
+            let timeout;
+
+            heading.addEventListener('mouseenter', () => {
+                clearTimeout(timeout);
+                text.classList.add('visible');
+            });
+
+            heading.addEventListener('mouseleave', () => {
+                timeout = setTimeout(() => {
+                    text.classList.remove('visible');
+                }, 1000);
+            });
+
+            text.addEventListener('mouseenter', () => {
+                clearTimeout(timeout);
+                text.classList.add('visible');
+            });
+
+            text.addEventListener('mouseleave', () => {
+                timeout = setTimeout(() => {
+                    text.classList.remove('visible');
+                }, 1000);
+            });
+        </script>
+        <script>
+            function toggleSpecial() {
+                const section = document.getElementById('special-section');
+                section.style.display = section.style.display === 'block' ? 'none' : 'block';
+            }
+
+            function toggleInfo(button) {
+                const detail = button.nextElementSibling;
+                if (detail.style.display === "block") {
+                    detail.style.display = "none";
+                } else {
+                    detail.style.display = "block";
+                }
+            }
+        </script>
+        <script>
+            function getCookie(name) {
+                return document.cookie.split(";").some(item => item.trim().startsWith(name + "="));
+            }
+
+            window.onload = function () {
+                const banner = document.getElementById("cookie-banner");
+                const acceptBtn = document.getElementById("accept-cookies");
+
+
+                if (!getCookie("cookies_accepted")) {
+                    banner.style.display = "block";
+                }
+
+                acceptBtn.onclick = function () {
+                    document.cookie = "cookies_accepted=true; path=/; max-age=" + 60 * 60 * 24 * 30; // 30 天
+                    banner.style.display = "none";
+                };
+            };
+        </script>
+</body>
+
+</html>
