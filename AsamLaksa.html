@@ -8,14 +8,21 @@
     <link rel="stylesheet" href="navigationMenu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="AsamLaksa.css">
+</head>
 
 <body>
     <header>
         <div class="navpage">
             <a href="HomePage.html" class="yummies-logo">
-                <img src="YummiesLogo.jpeg" alt="YummiesLogo">
+                <img src="photo/YummiesLogo.jpeg" alt="YummiesLogo">
             </a>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <nav>
+                <nav class="nav-links">
                 <a href="HomePage.html">Home</a>
                 <a href="NasiLemak.html">Nasi Lemak</a>
                 <a href="CharKueyTeow.html">Char Kuey Teow</a>
@@ -30,9 +37,7 @@
             Login<br>Here
         </a>
     </header>
-
-    <section class="hero-asamlaksa">
-
+        <section class="hero-asamlaksa">
         <div class="hero-content-asamlaksa">
             <h1>Asam Laksa</h1>
             <p>
@@ -47,7 +52,7 @@
         </div>
 
         <div class="hero-image-asamlaksa">
-            <img src="asam.jpg" alt="Asam Laksa">
+            <img src="photo/asam.jpg" alt="Asam Laksa">
         </div>
     </section>
 
@@ -59,11 +64,11 @@
                 <h3>Ingredients</h3>
 
                 <div class="floating-ingredients">
-                    <img src="fish.png" alt="fish" class="float-item item1">
-                    <img src="chili.png" alt="chili" class="float-item item2">
-                    <img src="mint.png" alt="mint" class="float-item item3">
-                    <img src="pineapple.png" alt="pineapple" class="float-item item4">
-                    <img src="onion.png" alt="onion" class="float-item item5">
+                    <img src="photo/fish.png" alt="fish" class="float-item item1">
+                    <img src="photo/chili.png" alt="chili" class="float-item item2">
+                    <img src="photo/mint.png" alt="mint" class="float-item item3">
+                    <img src="photo/pineapple.png" alt="pineapple" class="float-item item4">
+                    <img src="photo/onion.png" alt="onion" class="float-item item5">
                 </div>
 
                 <ul>
@@ -94,11 +99,11 @@
         <div class="history-container">
 
             <div class="history-photo">
-                <img src="history1.jpg">
-                <img src="history2.webp">
+                <img src="photo/history1.jpg">
+                <img src="photo/history2.webp">
             </div>
 
-            <div class="history-text">
+            <div class="historyText">
                 <h2>History of Asam Laksa</h2>
 
                 <p>
@@ -131,13 +136,9 @@
             </div>
         </div>
     </section>
-
-
-
     <section class="laksa-cards">
-
         <article class="laksa-card" onclick="window.open('https://share.google/KP7anrJi3iaY63PfT')">
-            <div class="laksa-card-media" style="background-image:url('AsamLaksa1.webp');">
+            <div class="laksa-card-media" style="background-image:url('photo/AsamLaksa1.webp');">
                 <span class="laksa-card-badge">George Town</span>
             </div>
             <div class="laksa-card-body">
@@ -167,7 +168,7 @@
         </article>
 
         <article class="laksa-card" onclick="window.open('https://share.google/QOYNthsqrHmDREdJi')">
-            <div class="laksa-card-media" style="background-image:url('asamlaksa2.jpg');">
+            <div class="laksa-card-media" style="background-image:url('photo/asamlaksa2.jpg');">
                 <span class="laksa-card-badge">Balik Pulau</span>
             </div>
             <div class="laksa-card-body">
@@ -197,7 +198,7 @@
         </article>
 
         <article class="laksa-card" onclick="window.open('https://share.google/ruFL8BgVCtFbsy6Bf')">
-            <div class="laksa-card-media" style="background-image:url('asamlaksa3.jpeg');">
+            <div class="laksa-card-media" style="background-image:url('photo/asamlaksa3.jpeg');">
                 <span class="laksa-card-badge">Ayer Itam</span>
             </div>
             <div class="laksa-card-body">
@@ -224,9 +225,7 @@
                 </div>
             </div>
         </article>
-
     </section>
-
     <div id="cookie-banner" class="cookie-banner">
         <span>This website uses cookies to ensure you get the best experience.</span>
         <button id="accept-cookies" class="cookie-btn">Accept</button>
@@ -236,7 +235,7 @@
             <div class="footerDisplay">
                 <h3>Our Company</h3>
                 <a href="HomePage.html">
-                    <img src="YummiesLogo.jpeg" alt="Company Photo"
+                    <img src="photo/YummiesLogo.jpeg" alt="Company Photo"
                         style="width:150px; border-radius:12px; transition:transform 0.3s ease;"
                         onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.5)';"
                         onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"></a>
@@ -273,4 +272,34 @@
     <div class="footerBottom">
         © 2025 YUMMIES Company. All rights reserved.
     </div>
+    <script>
+        function getCookie(name) {
+            return document.cookie.split(";").some(item => item.trim().startsWith(name + "="));
+        }
+
+        window.onload = function () {
+            const banner = document.getElementById("cookie-banner");
+            const acceptBtn = document.getElementById("accept-cookies");
+
+
+            if (!getCookie("cookies_accepted")) {
+                banner.style.display = "block";
+            }
+
+            acceptBtn.onclick = function () {
+                document.cookie = "cookies_accepted=true; path=/; max-age=" + 60 * 60 * 24 * 30; // 30 天
+                banner.style.display = "none";
+            };
+        };
+    </script>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
+
+</html>
