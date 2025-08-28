@@ -509,6 +509,27 @@
                 padding: 5px 10px;
                 font-size: 14px;
             }
+            .timeline {
+        padding: 20px 0;
+        max-width: 100%;
+    }
+
+    .timeline::after {
+        left: 20px; /* 或者 left: 30px; 让竖线靠左一点 */
+        margin-left: 0;
+    }
+
+    .timeline-container {
+        width: 100%;
+        padding: 10px 20px; /* 调整左右间距 */
+        left: 0 !important;
+    }
+
+    .timeline-container.left .content,
+    .timeline-container.right .content {
+        margin: 0 0 20px 60px; /* 内容偏右，留给竖线和点的位置 */
+    }
+
 
         @font-face {
             font-family: 'Bugaki';
@@ -518,6 +539,7 @@
             font-style: normal;
 
         }
+
 
 
 
