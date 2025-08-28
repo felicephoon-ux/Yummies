@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUMMIES-SatayCelup</title>
+    <link rel="stylesheet" href="navigationMenu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="Rating.css">
+</head>
+
+<body>
+    <header>
+        <div class="navpage">
+            <a href="HomePage.html" class="yummies-logo">
+                <img src="photo/YummiesLogo.jpeg" alt="YummiesLogo">
+            </a>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <nav class="nav-links">
+                    <a href="HomePage.html">Home</a>
+                    <a href="NasiLemak.html">Nasi Lemak</a>
+                    <a href="CharKueyTeow.html">Char Kuey Teow</a>
+                    <a href="SatayCelup.html">Satay Celup</a>
+                    <a href="AsamLaksa.html">Asam Laksa</a>
+                    <a href="BeanSproutsChicken.html">Bean Sprouts Chicken</a>
+                    <a href="Rating.html">Rating</a>
+                    <a href="AboutUs.html">About Us</a>
+                </nav>
+        </div>
+        <a href="LoginPage.html" class="login-icon">
+            Login<br>Here
+        </a>
+    </header>
+
+    <div class="ratingWrapper">
+        <div class="ratingTitleLine">
+            <div class="starGroup" id="left">
+                <span class="ratingStar" style="--d:.0s">🌟</span>
+                <span class="ratingStar" style="--d:.2s">🌟</span>
+                <span class="ratingStar" style="--d:.4s">🌟</span>
+            </div>
+
+            <div class="ratingTitle">Rate it!</div>
+
+            <div class="starGroup" id="right">
+                <span class="ratingStar" style="--d:.1s">🌟</span>
+                <span class="ratingStar" style="--d:.3s">🌟</span>
+                <span class="ratingStar" style="--d:.5s">🌟</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="headerRating">
+        <button id="rateNowBtn" class="rateNowBtn" onclick="openModal('rateModal')">Rate Now</button>
+        <h2>Reviews</h2>
+        <div class="searchWrapper">
+            <span class="searchIcon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Search by name or food...">
+        </div>
+    </div>
+
+    <div id="reviewContainer" class="reviewsContainer">
+        <div class="reviewCard">
+            <div class="reviewHeader">
+                <span class="reviewName">John</span>
+                <span class="reviewFood">🍤 Char Kuey Teow</span>
+                <span class="reviewRate">⭐⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="reviewContent">
+                <div class="reviewImage">
+                    <img src="photo/CharKueyTeow5.jpg" alt="Food Image">
+                </div>
+                <div class="reviewDescription">
+                    <p>The Char Kuey Teow here is absolutely delicious! The noodles are perfectly fried with that
+                        authentic wok hei (smoky aroma). The prawns are fresh and juicy, the bean sprouts add a nice
+                        crunch, and the balance of flavors is just right. Definitely one of the best I’ve had in
+                        Malaysia – highly recommended!</p>
+                </div>
+            </div>
+
+            <div class="reviewFooter">
+                <button class="loveButton">🤍 Love</button>
+                <span class="loveCount">12</span>
+            </div>
+        </div>
+        <div class="reviewCard">
+            <div class="reviewHeader">
+                <span class="reviewName">Alice</span>
+                <span class="reviewFood">🍜 AsamLaksa</span>
+                <span class="reviewRate">⭐⭐⭐⭐</span>
+            </div>
+
+            <div class="reviewContent">
+                <div class="reviewDescription">
+                    <p>The Laksa broth is rich and flavorful with the right balance of spice and creaminess. The noodles
+                        soak up the soup really well. A comforting bowl I’d happily order again.</p>
+                </div>
+            </div>
+
+            <div class="reviewFooter">
+                <button class="loveButton">🤍 Love</button>
+                <span class="loveCount">5</span>
+            </div>
+        </div>
+        <div class="reviewCard">
+            <div class="reviewHeader">
+                <span class="reviewName">Michael</span>
+                <span class="reviewFood">🍛 Nasi Lemak</span>
+                <span class="reviewRate">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="reviewContent">
+                <div class="reviewImage">
+                    <img src="photo/NasiLemak1.jpg" alt="Food Image">
+                </div>
+                <div class="reviewDescription">
+                    <p>Crispy fried chicken, fragrant coconut rice and sambal with just the right amount of spice. A
+                        true Malaysian classic!</p>
+                </div>
+            </div>
+            <div class="reviewFooter">
+                <button class="loveButton">🤍 Love</button>
+                <span class="loveCount">18</span>
+            </div>
+        </div>
+
+        <div class="reviewCard">
+            <div class="reviewHeader">
+                <span class="reviewName">Siti</span>
+                <span class="reviewFood">🍽️ Other</span>
+                <span class="reviewRate">⭐⭐⭐</span>
+            </div>
+            <div class="reviewContent">
+                <div class="reviewImage">
+                    <img src="photo/Dimsum.jpg" alt="Food Image">
+                </div>
+                <div class="reviewDescription">
+                    <p>Good selection of dim sum, though some dishes were a bit cold. Loved the har gow and siew mai
+                        though.</p>
+                </div>
+            </div>
+            <div class="reviewFooter">
+                <button class="loveButton">🤍 Love</button>
+                <span class="loveCount">62</span>
+            </div>
+        </div>
+
+        <div class="reviewCard">
+            <div class="reviewHeader">
+                <span class="reviewName">David</span>
+                <span class="reviewFood">🍽️ Other</span>
+                <span class="reviewRate">⭐⭐⭐⭐</span>
+            </div>
+            <div class="reviewContent">
+                <div class="reviewImage">
+                    <img src="photo/CurryMee.jpg" alt="Food Image">
+                </div>
+                <div class="reviewDescription">
+                    <p>The curry broth is flavorful and spicy but not overpowering. The tofu puffs soak up the soup
+                        nicely. Worth trying!</p>
+                </div>
+            </div>
+            <div class="reviewFooter">
+                <button class="loveButton">🤍 Love</button>
+                <span class="loveCount">10</span>
+            </div>
+        </div>
+        <div class="reviewCard">
+            <div class="reviewHeader">
+                <span class="reviewName">Baitin</span>
+                <span class="reviewFood">🍗 Bean Sprouts Chicken</span>
+                <span class="reviewRate">⭐⭐⭐⭐</span>
+            </div>
+            <div class="reviewContent">
+                <div class="reviewDescription">
+                    <p>Chicken is tender and smooth, beansprouts are fresh and crunchy, the sauce is just right — not
+                        too salty. Tastes great with rice. Simple but full of flavor.</p>
+                </div>
+            </div>
+            <div class="reviewFooter">
+                <button class="loveButton">🤍 Love</button>
+                <span class="loveCount">105</span>
+            </div>
+        </div>
+        <div class="reviewCard">
+            <div class="reviewHeader">
+                <span class="reviewName">Saiful</span>
+                <span class="reviewFood">🍗 Bean Sprouts Chicken</span>
+                <span class="reviewRate">⭐⭐⭐⭐</span>
+            </div>
+            <div class="reviewContent">
+                <div class="reviewImage">
+                    <img src="photo/BeanSproutChicken-Review.jpg" alt="Food Image">
+                </div>
+                <div class="reviewDescription">
+                    <p>The chicken is soft and juicy, the beansprouts are super crunchy, and the sauce is nicely
+                        balanced. Nothing fancy but really tasty, especially with rice!</p>
+                </div>
+            </div>
+            <div class="reviewFooter">
+                <button class="loveButton">🤍 Love</button>
+                <span class="loveCount">155</span>
+            </div>
+        </div>
+        <div class="reviewCard">
+            <div class="reviewHeader">
+                <span class="reviewName">Sam</span>
+                <span class="reviewFood">🍗 Bean Sprouts Chicken</span>
+                <span class="reviewRate">⭐⭐⭐⭐⭐</span>
+            </div>
+            <div class="reviewContent">
+                <div class="reviewImage">
+                    <img src="photo/BeanSproutChicken-Review1.jpg" alt="Food Image">
+                </div>
+                <div class="reviewDescription">
+                    <p>I really enjoyed the beansprout chicken here. The chicken is very tender and smooth, while the
+                        beansprouts are fresh and crunchy, giving a nice contrast in texture. The soy-based sauce has
+                        just the right balance, not too salty or oily, and it makes the whole dish very flavorful. It’s
+                        simple, but that’s the charm — nothing overcomplicated, just good food done right. Paired with
+                        rice, it feels comforting and satisfying. Definitely a dish I would recommend if you like light
+                        but tasty meals!</p>
+                </div>
+            </div>
+            <div class="reviewFooter">
+                <button class="loveButton">🤍 Love</button>
+                <span class="loveCount">34</span>
+            </div>
+        </div>
+    </div>
+    <div style="text-align:center; margin-top:15px;">
+        <button id="seeMoreBtn" class="seeMoreBtn">See More</button>
+    </div>
+    <div id="rateModal" class="modal">
+        <div class="modalContent">
+            <span class="closeButton" onclick="closeModal('rateModal')">&times;</span>
+            <h2>Rate & Review</h2>
+            <form id="reviewForm">
+                <label for="reviewerName">Your Name</label>
+                <input type="text" id="reviewerName" name="reviewerName" placeholder="Please Enter Your Name" required>
+
+                <label for="foodSelect">Select Food</label>
+                <select id="foodSelect" name="foodSelect" required>
+                    <option value="">-- Select --</option>
+                    <option value="AsamLaksa">🍜 Asam Laksa</option>
+                    <option value="BeanSproutsChicken">🍗 Bean Sprouts Chicken</option>
+                    <option value="CharKueyTeow">🍤 Char Kuey Teow</option>
+                    <option value="NasiLemak">🍛 Nasi Lemak</option>
+                    <option value="SatayCelup">🥙 Satay Celup</option>
+                    <option value="Other">🍽️ Other</option>
+                </select>
+
+                <label>Your Rating</label>
+                <div class="starRatingReview" id="starRating">
+                    <span class="starReview" data-value="1">&#9733;</span>
+                    <span class="starReview" data-value="2">&#9733;</span>
+                    <span class="starReview" data-value="3">&#9733;</span>
+                    <span class="starReview" data-value="4">&#9733;</span>
+                    <span class="starReview" data-value="5">&#9733;</span>
+                </div>
+                <input type="hidden" id="ratingValue" name="ratingValue" required>
+
+                <label for="photoUpload">Upload Photo (optional)</label>
+                <input type="file" id="photoUpload" name="photoUpload" accept="image/*">
+
+                <label for="description">Description</label>
+                <textarea id="description" name="description" placeholder="Please Enter Your Description"
+                    required></textarea>
+
+                <button type="submit" class="submitButton">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modalContent">
+            <span class="closeButton" onclick="closeModal('successModal')">&times;</span>
+            <h2>✅ Review Submitted Successfully!</h2>
+            <p>Thank you for your feedback.</p>
+            <button class="submitButton" onclick="closeModal('successModal')">OK</button>
+        </div>
+    </div>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <span>This website uses cookies to ensure you get the best experience.</span>
+        <button id="accept-cookies" class="cookie-btn">Accept</button>
+    </div>
+
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerDisplay">
+                <h3>Our Company</h3>
+                <a href="HomePage.html">
+                    <img src="photo/YummiesLogo.jpeg" alt="Company Photo"
+                        style="width:150px; border-radius:12px; transition:transform 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.5)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"></a>
+            </div>
+
+            <div class="footerDisplay">
+                <h3>Quick Links</h3>
+                <a href="AboutUs.html" class="footerBox">About Us</a>
+                <a href="AboutUs.html#messageContact" class="footerBox">Message & Contact</a>
+                <a href="Rating.html" class="footerBox">Rating</a>
+                <a href="LoginPage.html" class="footerBox">Login</a>
+            </div>
+
+            <div class="footerDisplay">
+                <h3>Foods</h3>
+                <a href="NasiLemak.html" class="footerLink">Nasi Lemak</a>
+                <a href="CharKueyTeow.html" class="footerLink">Char Kuey Teow</a>
+                <a href="SatayCelup.html" class="footerLink">Satay Celup</a>
+                <a href="AsamLaksa.html" class="footerLink">Asam Laksa</a>
+                <a href="BeanSproutsChicken.html" class="footerLink">Bean Sprouts Chicken</a>
+            </div>
+
+            <div class="footerDisplay">
+                <h3>Follow Us</h3>
+                <a href="#" class="footerIcon"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#" class="footerIcon"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#" class="footerIcon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#" class="footerIcon"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" class="footerIcon"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+        </div>
+    </footer>
+    <div class="footerBottom">
+        © 2025 YUMMIES Company. All rights reserved.
+    </div>
+
+    <script>
+        function getCookie(name) {
+            return document.cookie.split(";").some(item => item.trim().startsWith(name + "="));
+        }
+        window.onload = function () {
+            const banner = document.getElementById("cookie-banner");
+            const acceptBtn = document.getElementById("accept-cookies");
+
+            if (!getCookie("cookies_accepted")) {
+                banner.style.display = "block";
+            }
+            acceptBtn.onclick = function () {
+                document.cookie = "cookies_accepted=true; path=/; max-age=" + 60 * 60 * 24 * 30;
+                banner.style.display = "none";
+            };
+        };
+
+        const stars = document.querySelectorAll('.ratingStar');
+        function spinStars() {
+            stars.forEach(star => star.classList.add('spin'));
+            setTimeout(() => stars.forEach(star => star.classList.remove('spin')), 1000);
+        }
+        setInterval(spinStars, 2000);
+
+        document.getElementById("reviewContainer").addEventListener("click", (e) => {
+            if (e.target.classList.contains("loveButton")) {
+                let button = e.target;
+                let countSpan = button.nextElementSibling;
+                let current = parseInt(countSpan.textContent);
+
+                if (button.classList.contains("active")) {
+                    button.classList.remove("active");
+                    button.textContent = "🤍 Love";
+                    countSpan.textContent = current - 1;
+                } else {
+                    button.classList.add("active");
+                    button.textContent = "💛 Loved";
+                    countSpan.textContent = current + 1;
+
+                    countSpan.classList.add("bump");
+                    setTimeout(() => countSpan.classList.remove("bump"), 200);
+
+                    for (let i = 0; i < 3; i++) {
+                        let heart = document.createElement("span");
+                        heart.textContent = "💛";
+                        heart.classList.add("heartParticle");
+
+                        let x = (Math.random() - 0.5) * 40;
+                        let y = Math.random() * -20;
+
+                        heart.style.left = `${x}px`;
+                        heart.style.top = `${y}px`;
+
+                        button.appendChild(heart);
+
+                        setTimeout(() => heart.remove(), 1000);
+                    }
+                }
+            }
+        });
+
+        function openModal(id) {
+            document.getElementById(id).style.display = "block";
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+
+        document.querySelectorAll('#starRating .starReview').forEach(star => {
+            star.addEventListener('click', function () {
+                const value = this.getAttribute('data-value');
+                document.getElementById('ratingValue').value = value;
+
+                document.querySelectorAll('#starRating .starReview').forEach(s => {
+                    s.classList.remove('selected');
+                });
+
+                for (let i = 0; i < value; i++) {
+                    document.querySelectorAll('#starRating .starReview')[i].classList.add('selected');
+                }
+            });
+        });
+
+        document.getElementById("reviewForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById("reviewerName").value.trim();
+            const foodSelect = document.getElementById("foodSelect");
+            const food = foodSelect.options[foodSelect.selectedIndex].text;
+            const rating = document.getElementById("ratingValue").value;
+            const desc = document.getElementById("description").value.trim();
+            const photoFile = document.getElementById("photoUpload").files[0];
+
+            if (!name || !food || !rating || !desc) {
+                alert("⚠️ Please fill in all required fields.");
+                return;
+            }
+
+            let starsHTML = "";
+            for (let i = 0; i < rating; i++) {
+                starsHTML += `<span class="starReview selected">⭐</span>`;
+            }
+            for (let i = rating; i < 5; i++) {
+                starsHTML += `<span class="starReview">⭐</span>`;
+            }
+
+            let photoHTML = "";
+            if (photoFile) {
+                const photoURL = URL.createObjectURL(photoFile);
+                photoHTML = `<img src="${photoURL}" alt="Review Photo" class="reviewPhoto">`;
+            }
+
+            const newReview = document.createElement("div");
+            newReview.classList.add("reviewCard");
+            newReview.innerHTML = `
+                <div class="reviewHeader">
+                    <span class="reviewName">${name}</span>
+                    <span class="reviewFood">${food}</span>
+                    <span class="reviewRate">${starsHTML}</span>
+                </div>
+
+                <div class="reviewContent">
+                    ${photoHTML}
+                    <p class="reviewDescription">${desc}</p>
+                </div>
+
+                <div class="reviewFooter">
+                    <button class="loveButton">🤍 Love</button>
+                    <span class="loveCount">0</span>
+                </div>
+            `;
+
+            document.getElementById("reviewContainer").prepend(newReview);
+
+            renderReviews();
+
+            closeModal("rateModal");
+            openModal("successModal");
+
+            this.reset();
+            document.querySelectorAll('#starRating .starReview').forEach(s => s.classList.remove('selected'));
+            document.getElementById('ratingValue').value = "";
+        });
+    </script>
+    <script>
+        let reviewsPerPage = 4;
+        let currentVisible = reviewsPerPage;
+
+        function renderReviews() {
+            const reviews = document.querySelectorAll(".reviewCard");
+            reviews.forEach((review, index) => {
+                if (index < currentVisible) {
+                    review.style.display = "block";
+                } else {
+                    review.style.display = "none";
+                }
+            });
+
+            if (currentVisible >= reviews.length) {
+                document.getElementById("seeMoreBtn").style.display = "none";
+            } else {
+                document.getElementById("seeMoreBtn").style.display = "inline-block";
+            }
+        }
+
+        document.getElementById("seeMoreBtn").addEventListener("click", function () {
+            currentVisible += reviewsPerPage;
+            renderReviews();
+        });
+
+        function addReview(data) {
+            const newDiv = document.createElement("div");
+            newDiv.className = "reviewCard";
+            newDiv.innerHTML = `
+            <h4>${data.name} - ${data.food}</h4>
+            <p>${"⭐".repeat(data.rating)}</p>
+            <p>${data.description}</p>
+            ${data.image ? `<img src="${data.image}" alt="food">` : ""}
+        `;
+            document.getElementById("reviewContainer").prepend(newDiv);
+
+            currentVisible++;
+            renderReviews();
+        }
+
+        renderReviews();
+    </script>
+    <script>
+        document.getElementById("searchInput").addEventListener("input", function () {
+            const filter = this.value.toLowerCase();
+            const reviews = document.querySelectorAll(".reviewCard");
+
+            reviews.forEach(review => {
+                const text = review.innerText.toLowerCase();
+
+                if (text.includes(filter)) {
+                    review.style.display = "block";
+                } else {
+                    review.style.display = "none";
+                }
+            });
+
+            updateSeeMoreAfterSearch();
+        });
+
+        function updateSeeMoreAfterSearch() {
+            const filter = document.getElementById("searchInput").value.toLowerCase();
+            const reviews = document.querySelectorAll(".reviewCard");
+            const visibleReviews = Array.from(reviews).filter(r => r.style.display !== "none");
+
+            if (filter) {
+                visibleReviews.forEach(r => r.style.display = "block");
+                document.getElementById("seeMoreBtn").style.display = "none";
+            } else {
+                renderReviews();
+            }
+        }
+    </script>
+    <script>
+        function getCookie(name) {
+            return document.cookie.split(";").some(item => item.trim().startsWith(name + "="));
+        }
+
+        window.onload = function () {
+            const banner = document.getElementById("cookie-banner");
+            const acceptBtn = document.getElementById("accept-cookies");
+
+
+            if (!getCookie("cookies_accepted")) {
+                banner.style.display = "block";
+            }
+
+            acceptBtn.onclick = function () {
+                document.cookie = "cookies_accepted=true; path=/; max-age=" + 60 * 60 * 24 * 30;
+                banner.style.display = "none";
+            };
+        };
+    </script>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
