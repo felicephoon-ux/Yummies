@@ -201,31 +201,41 @@
             transform: translateY(-2px);
         }
 
-        @media (max-width: 600px) {
-            .login-container {
-                width: 90%;
-                height: auto;
-                padding: 20px 15px;
-            }
 
-            header {
-                padding: 10px;
-                flex-direction: column;
-            }
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+        height: auto;
+        padding: 20px 15px;
+    }
 
-            .header-text {
-                font-size: 20px;
-            }
-        }
+    header {
+        padding: 10px;
+        flex-direction: column;
+        position: relative;
+    }
 
-        @media (max-width: 768px) {
-            .login-container {
-                width: 80%;
-                height: auto;
-                padding: 25px 20px;
-            }
+    .back-button {
+        font-size: 16px;
+        padding: 8px 10px;
+        position: absolute;
+        left: 10px; /* 左边一点 */
+        top: 10px;
+    }
 
+    .yummies-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .yummies-logo img {
+        width: 70px;  /* 小一点 */
+        height: auto;
+    }
+}
             .header-text {
                 font-size: 22px;
             }
+
         }
