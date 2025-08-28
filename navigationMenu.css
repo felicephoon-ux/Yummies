@@ -1,0 +1,479 @@
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            background-color: #f6e4c4;
+        }
+
+        header {
+            background: black;
+            color: white;
+            padding: 15px 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .navpage {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .yummies-logo img {
+            width: 110px;
+            height: auto;
+            border-radius: 6px;
+            transition: 0.3s;
+            margin-right: 120px;
+        }
+
+        .yummies-logo:hover img {
+            opacity: 0.8;
+        }
+
+
+        nav a {
+            color: #999999;
+            margin: 0 18px;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Bugaki', serif;
+            font-weight: 500px;
+            transition: 0.1s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .login-icon {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            background-color: #fff;
+            color: black;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        .login-icon:hover {
+            background-color: #bbb;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-content {
+            z-index: 1;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+        }
+
+        .hero-content h1 {
+            color: #fff;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-family: monospace;
+        }
+
+        .hero-content p {
+            color: aliceblue;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .explore-btn {
+            display: inline-block;
+            background: rgb(255, 194, 103);
+            color: rgb(133, 77, 0);
+            padding: 12px 30px;
+            margin-top: 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .explore-btn:hover {
+            background-color: #d1aa73;
+        }
+
+
+
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(248, 179, 83, 0.852);
+            color: black;
+            padding: 15px 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: none;
+            display: flex;
+            align-items: left;
+            z-index: 1;
+        }
+
+        .cookie-btn {
+            position: fixed;
+            right: 10px;
+            bottom: 8px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: none;
+            background: #f6e4c4;
+            color: black;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .cookie-btn:hover {
+            background: darkred;
+            color: #fff;
+        }
+
+        .food {
+            background-color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 50px auto 0px auto;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .carousel {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .food-name {
+            margin-top: 12px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #00000080;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .carousel-btn:hover {
+            background: #00000080;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .about-food p {
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            color: #666666;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 0 80px;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #555;
+            top: 40px;
+            bottom: 40px;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .timeline-container {
+            padding: 20px 40px;
+            position: relative;
+            width: 40%;
+        }
+
+        .timeline-container.left {
+            left: 0;
+        }
+
+        .timeline-container.right {
+            left: 50%;
+        }
+
+        .content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            position: right;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+
+        .timeline-container.left .content {
+            margin-right: auto;
+            margin-left: 0;
+            text-align: left;
+        }
+
+        .timeline-container.right .content {
+            margin-left: auto;
+            margin-right: 0;
+            text-align: left;
+        }
+
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(198, 116, 8);
+            top: 30px;
+            border-radius: 50%;
+            z-index: 1;
+
+            transform: scale(0);
+            opacity: 0;
+            transition: all 0.6s ease-out;
+        }
+
+
+        .timeline-container.show::before {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+
+
+        .timeline-container .content {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+
+        .timeline-container.show .content {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-container.left::before {
+            right: -35px;
+        }
+
+        .timeline-container.right::before {
+            left: -15px;
+        }
+
+        .food-list {
+            margin-top: 10px;
+        }
+
+        .food-list li {
+            margin: 5px 0;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .food-list li:hover {
+            color: #ff5722;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #432918;
+            color: white;
+            padding: 40px 20px;
+            font-family: "Poppins", "Arial", sans-serif;
+            font-weight: bold;
+        }
+
+        .footerContainer {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding-left: 100px;
+            gap: 30px;
+        }
+
+        .footerDisplay {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footerDisplay h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+            border-bottom: 2px solid #ff6600;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .footerDisplay p,
+        .footerDisplay a {
+            margin: 10px 0;
+            color: #ddd;
+            font-size: 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .footerDisplay p:hover,
+        .footerDisplay a:hover {
+            color: #ff6600;
+        }
+
+        .footerBox {
+
+            display: inline-block;
+            padding: 5px 0 5px 20px;
+            transition: all 0.3s ease;
+
+        }
+
+        .footerBox:hover {
+            border: 2px solid #ff6600;
+            border-radius: 26px;
+            background-color: #f6e4c4;
+        }
+
+        .footerLink {
+            display: inline-block;
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footerLink:hover {
+            transform: translateX(10px);
+            color: #ff6600;
+        }
+
+        .footerIcon i {
+            font-size: 20px;
+            margin-right: 8px;
+            color: #555;
+            transition: color 0.3s;
+        }
+
+        .footerIcon:hover i.fa-facebook {
+            color: #1877f2;
+        }
+
+        .footerIcon:hover i.fa-instagram {
+            color: #e4405f;
+        }
+
+        .footerIcon:hover i.fa-linkedin {
+            color: #0077b5;
+        }
+
+        .footerIcon:hover i.fa-twitter {
+            color: #1da1f2;
+        }
+
+        .footerIcon:hover i.fa-youtube {
+            color: #ff0000;
+        }
+
+        .footerBottom {
+            background-color: black;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Bugaki', serif;
+            padding: 15px 0;
+            color: white;
+        }
+
+        @font-face {
+            font-family: 'Bugaki';
+            src: url('Bugaki.woff2') format('woff2'),
+                url('Bugaki.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
