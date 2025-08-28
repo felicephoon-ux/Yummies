@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Pacifico', monospace;
+}
+
+
+.sataycelup-hero-content {
+  font-family: 'Bobby Jones Soft Regular', monospace;
+}
+
+@font-face {
+  font-family: 'Bobby Jones Soft Regular';
+  src: url('/fonts/BobbyJonesSoftRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sataycelup-emoji {
+  margin-right: 12px; 
+}
+
+.sataycelup-hero-video {
+  position: relative;
+  width: 100%;
+  height: 480px; 
+  overflow: hidden; 
+  border-radius: 16px; 
+}
+
+.sataycelup-hero-video iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 177.77%; 
+  height: 177.77%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; 
+}
+
+.sataycelup-hero-content {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px 20px;
+  background: linear-gradient(to bottom right, #fffaf0, #fff1e0);
+  border-radius: 20px;
+  font-family: "Bobby Jones Soft Regular", monospace;
+  color: #865230;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sataycelup-title {
+  font-size: 66px;
+  font-weight: 700;
+  color: #d35400;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+  margin-bottom: 10px;
+  animation: sataycelup-slideIn 2s ease-in-out;
+  line-height: 1.4;
+}
+
+.sataycelup-tagline {
+  font-size: 1.3rem;
+  color: #784421;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sataycelup-details {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 1rem;
+  max-width: 700px;
+  text-align: left;
+}
+
+.sataycelup-hover-item {
+  background: #fff5e6;
+  padding: 16px 18px;
+  margin: 15px 0;
+  border-radius: 14px;
+  text-align: left;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 197, 109, 0.2);
+}
+
+.sataycelup-hover-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 153, 0, 0.3);
+}
+
+.sataycelup-hover-item strong {
+  color: #b34700;
+  font-size: 1.1rem;
+}
+
+.sataycelup-hidden-text {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: #f96108;
+  margin-top: 8px;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.sataycelup-hover-item:hover .sataycelup-hidden-text {
+  max-height: 150px;
+  opacity: 1;
+}
+
+/* White Cards (History & FAQ) */
+.history-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Bobby Jones Soft Regular', cursive;
+  color: #5a3e1b; 
+}
+
+.history-title {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #b85c00; 
+  text-shadow: 0 0 10px #ff7f27;
+}
+
+.history-card {
+  background: #fff3e0; 
+  border-left: 8px solid #f96108; 
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(249, 97, 8, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(249, 97, 8, 0.3);
+}
+
+.history-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #d84300; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.history-card p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #6d4c41;
+}
+
+.history-card + .history-card {
+  margin-top: 30px;
+}
+
+.sataycelup-full-image {
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.sataycelup-full-image img {
+  position: absolute;
+  bottom:-550px;
+  left: 1199px;
+  width: 300px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.sataycelup-faq-light {
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 30px 20px;
+  background: #fff8e1; 
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(255, 183, 77, 0.4);
+  font-family: 'Poppins', sans-serif;
+  color: #6b4c28;
+}
+
+.faq-title-light {
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #d84315; 
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px #ffcc80;
+  user-select: none;
+}
+
+.faq-card {
+  background: #fff2cc; 
+  padding: 22px 28px;
+  margin-bottom: 28px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(255, 152, 0, 0.2);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.faq-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(255, 152, 0, 0.35);
+}
+
+.faq-question {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #bf360c; 
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.faq-answer {
+  font-size: 1.1rem;
+  color: #4e342e; 
+  line-height: 1.6;
+  margin-left: 30px; 
+  user-select: text;
+}
+
+.faq-question strong {
+  color: #d84315;
+}
+
+
+.sataycelup-video-bottom {
+  text-align: center;
+}
+
+.sataycelup-video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; 
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.sataycelup-rounded-video {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sataycelup-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.sataycelup-video-caption {
+  font-style: italic;
+  color: #666;
+  margin-top: 15px;
+}
+
+.sataycelup-ratings {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ebc031; 
+  padding: 12px 20px;
+  margin: 15px auto 20px;
+  border-radius: 30px;
+  width: 350px;
+  height: 30px;;
+  length:80px;
+  transition: transform 0.6s ease;
+  animation: floatPulse 5s infinite ease-in-out;
+}
+
+.rating-score {
+  font-weight: 700;
+  font-size: 23px;
+  color: #ff9f45; 
+  margin-right: 8px;
+  animation: glowText 3s infinite;
+}
+
+.stars .star {
+  display: inline-block;
+  font-size: 1.3rem;
+  animation: shine 1.5s infinite;
+  margin: 0 2px;
+  color: #f9ad56;
+}
+
+@keyframes shine {
+  0% { opacity: 0.7; transform: scale(1); filter: brightness(100%); }
+  50% { opacity: 1; transform: scale(1.3); filter: brightness(160%); }
+  100% { opacity: 0.7; transform: scale(1); filter: brightness(100%); }
+}
+
+@keyframes sataycelup-fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sataycelup-slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes sataycelup-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .sataycelup-card {
+    padding: 40px 50px;
+  }
+  
+  .sataycelup-details li {
+    text-align: center;
+  }
+  
+  .sataycelup-video-container {
+    padding-bottom: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .sataycelup-title {
+    font-size: 2rem;
+  }
+  
+  .sataycelup-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .sataycelup-tagline {
+    font-size: 1.1rem;
+  }
+  
+  .sataycelup-details li {
+    font-size: 1rem;
+  }
+  
+  .sataycelup-rounded-video {
+    border-radius: 12px;
+  }
+  
+  .sataycelup-hero-content {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sataycelup-title {
+    font-size: 1.8rem;
+  }
+  
+  .sataycelup-card {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .sataycelup-rounded-video {
+    border-radius: 8px;
+  }
+  
+  .sataycelup-container {
+    padding: 10px;
+  }
+}
