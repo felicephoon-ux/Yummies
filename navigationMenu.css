@@ -511,7 +511,7 @@
             }
            
              .timeline-container.left::before {
-                right: -10px;
+                right: -5px;
             }
 
             .timeline-container.right::before {
@@ -528,6 +528,7 @@
             font-style: normal;
 
         }
+
 
 
 
