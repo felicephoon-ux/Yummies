@@ -337,6 +337,17 @@
             font-weight: bold;
         }
 
+        .food-list a {
+            text-decoration: none;
+            color: #333;
+            transition: 0.3s;
+        }
+
+        .food-list a:hover {
+            color: #a7790d;
+            font-weight: bold;
+        }
+
         .footer {
             background-color: #432918;
             color: white;
@@ -512,4 +523,5 @@
                 url('Bugaki.woff') format('woff');
             font-weight: normal;
             font-style: normal;
+
         }
