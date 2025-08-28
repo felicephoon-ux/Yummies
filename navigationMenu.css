@@ -510,7 +510,7 @@
                 font-size: 14px;
             }
            .timeline-container.left::before {
-            right: -40px;
+            right: -25px;
         }
 
         .timeline-container.right::before {
@@ -527,6 +527,7 @@
             font-style: normal;
 
         }
+
 
 
 
