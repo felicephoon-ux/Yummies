@@ -328,13 +328,6 @@
 
         .food-list li {
             margin: 5px 0;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .food-list li:hover {
-            color: #a7790d;
-            font-weight: bold;
         }
 
         .food-list a {
@@ -346,6 +339,7 @@
         .food-list a:hover {
             color: #a7790d;
             font-weight: bold;
+            cursor: pointer;
         }
 
         .footer {
@@ -525,4 +519,5 @@
             font-style: normal;
 
         }
+
 
