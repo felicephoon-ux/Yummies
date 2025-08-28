@@ -509,6 +509,18 @@
                 padding: 5px 10px;
                 font-size: 14px;
             }
+           body {
+                margin: 0;
+                padding: 0;
+                width: 100%; 
+                box-sizing: border-box; 
+        }
+
+        header, .hero, .food, .timeline, .footer {
+                margin: 0;
+                padding-left: 0;
+                padding-right: 0;
+        }
 
         @font-face {
             font-family: 'Bugaki';
@@ -518,6 +530,7 @@
             font-style: normal;
 
         }
+
 
 
 
