@@ -1,0 +1,224 @@
+h2 {
+  margin: 0.2rem 0;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-height: 500px;
+  border-radius: 8px;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.9;
+  font-size: 18px;
+}
+
+.nasi-lemak-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.image-container img {
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nasi-lemak-section .image-container img {
+  width: 350px;          
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+  animation: floatImage 5s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.description {
+  max-width: 600px;
+}
+
+.description h1 {
+  font-size: 60px;
+  color: #b22222;
+  margin-bottom: 15px;
+}
+
+.description h2 {
+  font-size: 36px;
+  color: darkgreen;
+  margin-bottom: 30px;
+}
+
+.description p {
+  font-size: 22px;
+  color: #444;
+}
+
+.ingredients-section {
+    background-color: #fff8f0;
+    padding: 60px 20px;
+    font-family: 'Georgia', serif;
+    color: #333;
+    text-align: center;
+}
+
+.ingredients-section h2 {
+    font-size: 2.5rem;
+    color: #7b2e4d;
+    margin-bottom: 15px;
+}
+
+.ingredients-section .intro {
+    font-size: 1.3rem;
+    margin-bottom: 45px;
+    color: #555;
+}
+
+.ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-rows: 1fr;
+    gap: 30px;
+    justify-items: center;
+}
+
+.ingredient-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-circle {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 15px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-circle img {
+    width: 70px; 
+    height: 70px; 
+}
+
+.ingredient-card p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+}
+
+.ingredient-card:hover .icon-circle {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.restaurant-section {
+  background-color: #fff8f0;
+  padding: 60px 20px;
+  font-family: 'Georgia', serif;
+  color: #333;
+  text-align: center;
+}
+
+.restaurant-section h2 {
+  font-size: 2.5rem;
+  color: #7b2e4d;
+  margin-bottom: 45px;
+}
+
+.restaurant-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.restaurant-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 270px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.restaurant-card h3 {
+  font-size: 1.4rem;
+  color: #7b2e4d;
+  margin-bottom: 12px;
+}
+
+.restaurant-card p {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #555;
+  margin: 5px 0;
+}
+
+.restaurant-card strong {
+  color: #444;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-card .rating {
+    font-size: 1.1rem;
+    color: #e6b800; 
+    margin-top: 10px;
+}
+
+.restaurant-card .rating strong {
+    color: #333; 
+}
+
+.history-section {
+  background-color: #ffd139;
+  padding: 60px;
+  color: #222;
+  font-family: 'Georgia', serif;
+}
+
+.history-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.history-text h2 {
+  color: #7b2e4d;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+}
+
