@@ -248,35 +248,9 @@
             font-weight: bold;
             cursor: pointer;
         }
- @media screen and (max-width: 768px) {
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 70px;
-                right: 0;
-                width: 100%;
-                flex-direction: column;
-                background-color: #432918;
-                padding: 20px 0;
-                text-align: center;
-            }
 
-            .nav-links.active {
-                display: flex;
-            }
-
-            .burger {
-                display: flex;
-            }
-
-            .login-icon {
-                padding: 5px 10px;
-                font-size: 14px;
-            }
-
-        }
-     
 
 
     
+
 
