@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUMMIES-About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="navigationMenu.css">
+    <link rel="stylesheet" href="AboutUs.css">
+</head>
+
+<body>
+    <header>
+        <div class="navpage">
+            <a href="HomePage.html" class="yummies-logo">
+                <img src="photo/YummiesLogo.jpeg" alt="YummiesLogo">
+            </a>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <nav class="nav-links">
+                    <a href="HomePage.html">Home</a>
+                    <a href="NasiLemak.html">Nasi Lemak</a>
+                    <a href="CharKueyTeow.html">Char Kuey Teow</a>
+                    <a href="SatayCelup.html">Satay Celup</a>
+                    <a href="AsamLaksa.html">Asam Laksa</a>
+                    <a href="BeanSproutsChicken.html">Bean Sprouts Chicken</a>
+                    <a href="Rating.html">Rating</a>
+                    <a href="AboutUs.html">About Us</a>
+                </nav>
+        </div>
+        <a href="LoginPage.html" class="login-icon">
+            Login<br>Here
+        </a>
+    </header>
+
+    <section class="background-photo">
+        <h1>About Us</h1>
+    </section>
+    <section class="displayAboutUs">
+        <h2>Hello there, we are Team Yummies!</h2>
+        <p>
+            A group of passionate food explorers in Malaysia who enjoying to share tastes and the story behind every
+            dish.<br><br>
+            This website provides travelers a resource for discover local cuisines through cultural.
+            Our mission is to inspire every tourist and foodie to explore the places through taste buds.<br><br>
+            In additional, we believe in preserving traditions.
+            Many traditional dishes are losing away nowadays, so we hope to maintain the taste for future generations.
+        </p>
+        <img src="photo/GroupPhoto.jpg" alt="Group Photo" class="team-photo">
+        <h3>Join us on this yummy journey <br>🌍🍴 Team Yummies, Every Mouthful is a Fun. 🌍🍴</h3>
+    </section>
+    <div class="messageContainer">
+        <div class="formMessage">
+            <h2>Drop Us A Message</h2>
+            <form id="formSheet">
+                <label for="name">Full Name</label><br>
+                <input type="text" class="name" name="name" placeholder="Please Enter Your Name"><br><br>
+
+                <label for="email">Email Address</label><br>
+                <input type="email" class="email" name="email" placeholder="Please Enter Your Email"><br><br>
+
+                <label for="subject">Subject</label><br>
+                <select class="formSubject" name="subject">
+                    <option value="">Please select an option</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="food">Recommendation</option>
+                    <option value="location">New Spot</option>
+                    <option value="photo">Photo Sharing</option>
+                    <option value="other">Other</option>
+                </select><br>
+
+                <label for="message">Your Message</label><br>
+                <textarea id="message" class="formTextarea" name="message"
+                    placeholder="Please Enter Your Message"></textarea><br><br>
+
+                <p class="error-message" style="color: red;"></p>
+                <button type="submit" class="formSubmit">Send Message</button>
+
+            </form>
+            <div class="formPopupOverlay">
+                <div class="formPopupContent">
+                    <h2>Message Sent!</h2>
+                    <p>Thank you for reaching out. We'll get back to you soon.</p>
+                    <button class="formPopupClose">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="messageContact" class="messageContact">
+            <h2>Contact Details</h2>
+
+            <div class="messagedisContact">
+                <h3><span class="icon">👤</span>Cheng Jie Qi</h3><br>
+                <p><span class="icon">📧</span>jq110805@1utar.my</p><br>
+                <p><span class="icon">📞</span>+60 1234 5678</p><br>
+            </div>
+            <div class="messagedisContact">
+                <h3><span class="icon">👤</span>Teoh Yu Xuan</h3><br>
+                <p><span class="icon">📧</span>yuxuann@1utar.my</p><br>
+                <p><span class="icon">📞</span>+60 8765 4321</p><br>
+            </div>
+            <div class="messagedisContact">
+                <h3><span class="icon">👤</span>Phoon Xin Tung</h3><br>
+                <p><span class="icon">📧</span>felice.phoon@1utar.my</p><br>
+                <p><span class="icon">📞</span>+60 1357 2468</p><br>
+            </div>
+
+            <div class="messagedisContact">
+                <h3><span class="icon">👤</span>Yoong Kai Dong</h3><br>
+                <p><span class="icon">📧</span>yoongkd96@1utar.my</p><br>
+                <p><span class="icon">📞</span>+60 2468 1357</p><br>
+            </div>
+        </div>
+    </div>
+    <div id="cookie-banner" class="cookie-banner">
+        <span>This website uses cookies to ensure you get the best experience.</span>
+        <button id="accept-cookies" class="cookie-btn">Accept</button>
+    </div>
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerDisplay">
+                <h3>Our Company</h3>
+                <a href="HomePage.html">
+                    <img src="photo/YummiesLogo.jpeg" alt="Company Photo"
+                        style="width:150px; border-radius:12px; transition:transform 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 15px rgba(0,0,0,0.5)';"
+                        onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"></a>
+            </div>
+
+            <div class="footerDisplay">
+                <h3>Quick Links</h3>
+                <a href="AboutUs.html" class="footerBox">About Us</a>
+                <a href="AboutUs.html#messageContact" class="footerBox">Message & Contact</a>
+                <a href="Rating.html" class="footerBox">Rating</a>
+                <a href="LoginPage.html" class="footerBox">Login</a>
+            </div>
+
+            <div class="footerDisplay">
+                <h3>Foods</h3>
+                <a href="NasiLemak.html" class="footerLink">Nasi Lemak</a>
+                <a href="CharKueyTeow.html" class="footerLink">Char Kuey Teow</a>
+                <a href="SatayCelup.html" class="footerLink">Satay Celup</a>
+                <a href="AsamLaksa.html" class="footerLink">Asam Laksa</a>
+                <a href="BeanSproutsChicken.html" class="footerLink">Bean Sprouts Chicken</a>
+            </div>
+
+            <div class="footerDisplay">
+                <h3>Follow Us</h3>
+                <a href="#" class="footerIcon"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#" class="footerIcon"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#" class="footerIcon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#" class="footerIcon"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" class="footerIcon"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+
+        </div>
+    </footer>
+    <div class="footerBottom">
+        © 2025 YUMMIES Company. All rights reserved.
+    </div>
+    <script>
+        const forms = document.querySelectorAll('#formSheet');
+        const popup = document.querySelector('.formPopupOverlay');
+        const popupClose = document.querySelector('.formPopupClose');
+
+        forms.forEach(form => {
+            const submitButton = form.querySelector('.formSubmit');
+            const errorMessage = document.querySelector('.error-message');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                let name = form.querySelector(".name").value.trim();
+                let email = form.querySelector(".email").value.trim();
+                let subject = form.querySelector(".formSubject").value.trim();
+                let message = form.querySelector(".formTextarea").value.trim();
+
+                errorMessage.textContent = "";
+
+                if (name === "") {
+                    errorMessage.textContent = "Please enter your name.";
+                    return;
+                }
+
+                let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
+                if (!email.match(emailPattern)) {
+                    errorMessage.textContent = "Please enter a valid email address.";
+                    return;
+                }
+
+                if (subject === "") {
+                    errorMessage.textContent = "Please select a subject.";
+                    return;
+                }
+
+                if (message === "") {
+                    errorMessage.textContent = "Please enter your message.";
+                    return;
+                }
+
+                submitButton.textContent = 'Sending...';
+                submitButton.classList.add("sending");
+                submitButton.disabled = true;
+
+                setTimeout(() => {
+                    submitButton.textContent = 'Send Message';
+                    submitButton.classList.remove("sending");
+                    submitButton.disabled = false;
+                    form.reset();
+
+                    popup.style.display = "flex";
+                }, 1500);
+
+            });
+
+        });
+        popupClose.addEventListener('click', () => {
+            popup.style.display = 'none';
+        });
+
+    </script>
+    <script>
+        function getCookie(name) {
+            return document.cookie.split(";").some(item => item.trim().startsWith(name + "="));
+        }
+
+        window.onload = function () {
+            const banner = document.getElementById("cookie-banner");
+            const acceptBtn = document.getElementById("accept-cookies");
+
+
+            if (!getCookie("cookies_accepted")) {
+                banner.style.display = "block";
+            }
+
+            acceptBtn.onclick = function () {
+                document.cookie = "cookies_accepted=true; path=/; max-age=" + 60 * 60 * 24 * 30; // 30 天
+                banner.style.display = "none";
+            };
+        };
+    </script>
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
