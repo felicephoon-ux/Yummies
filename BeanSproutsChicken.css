@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.beansproutschicken-video-section {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.beansproutschicken-flexcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.beansproutschicken-videocontainer {
+  flex: 1;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beansproutschicken-videocontainer video {
+  width: 100%;
+  height: auto;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.beansproutschicken-container {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.beansproutschicken-hero {
+  text-align: center;
+  background: url('photo/BeanSproutsChicken1.jpg') no-repeat center center/cover;
+  color: rgb(255, 218, 143);
+  padding: 100px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.beansproutschicken-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+
+.beansproutschicken-hero-title,
+.beansproutschicken-hero-tagline {
+  position: relative;
+  z-index: 1;
+}
+
+.beansproutschicken-hero-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.beansproutschicken-hero-tagline {
+  margin: 5px 0;
+  font-size: 1.3rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.beansproutschicken-emoji {
+  display: inline-block;
+  animation: beansproutschicken-bounce s infinite;
+}
+
+.beansproutschicken-emoji:hover {
+  transform: scale(1.3) rotate(15deg);
+}
+
+.beansproutschicken-section {
+  padding: 40px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
+}
+
+.beansproutschicken-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.beansproutschicken-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #e65100;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px dashed #ffcc80;
+  display: flex;
+  align-items: center;
+}
+
+.beansproutschicken-section h2 i {
+  margin-right: 15px;
+  color: #ff8a00;
+}
+
+.beansproutschicken-highlight {
+  background: linear-gradient(120deg, #ffecb3 0%, #ffcc80 100%);
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.beansproutschicken-highlight1 {
+  background: linear-gradient(120deg, #ffecb3 0%, #ffcc80 100%);
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.beansproutschicken-info-box {
+  background: #fff8e1;
+  padding: 25px;
+  border-radius: 12px;
+  margin: 25px 0;
+  border-left: 5px solid #ff8a00;
+}
+
+.beansproutschicken-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin: 30px 0;
+}
+
+.beansproutschicken-info-card {
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.beansproutschicken-info-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #e65100;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.beansproutschicken-info-card h3 i {
+  margin-right: 10px;
+}
+
+.beansproutschicken-hours-list {
+  list-style: none;
+}
+
+.beansproutschicken-hours-list li {
+  padding: 10px 0;
+  border-bottom: 1px dashed #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.beansproutschicken-hours-list li:last-child {
+  border-bottom: none;
+}
+
+.beansproutschicken-ingredients-list {
+  list-style-type: none;
+  columns: 2;
+  column-gap: 20px;
+}
+
+.beansproutschicken-ingredients-list li {
+  padding: 8px 0 8px 30px;
+  position: relative;
+}
+
+.beansproutschicken-ingredients-list li:before {
+  content: "•";
+  color: #ff8a00;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.beansproutschicken-recipe-steps {
+  list-style-type: none;
+  counter-reset: recipe-counter;
+}
+
+.beansproutschicken-recipe-steps li {
+  margin-bottom: 25px;
+  padding-left: 70px;
+  position: relative;
+}
+
+.beansproutschicken-recipe-steps li:before {
+  counter-increment: recipe-counter;
+  content: counter(recipe-counter);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: #ff8a00;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.beansproutschicken-map-container {
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.beansproutschicken-map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@keyframes beansproutschicken-bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .beansproutschicken-header h1 {
+    font-size: 3rem;
+  }
+
+  .beansproutschicken-tagline {
+    font-size: 1.4rem;
+  }
+
+  .beansproutschicken-section {
+    padding: 25px;
+  }
+
+  .beansproutschicken-section h2 {
+    font-size: 2rem;
+  }
+
+  .beansproutschicken-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .beansproutschicken-ingredients-list {
+    columns: 1;
+  }
+
+  .beansproutschicken-recipe-steps li {
+    padding-left: 60px;
+  }
+
+  .beansproutschicken-recipe-steps li:before {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
