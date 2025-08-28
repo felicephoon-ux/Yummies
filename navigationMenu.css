@@ -511,7 +511,7 @@
             }
            
              .timeline-container.left::before {
-                right: -5px;
+                right: 20px;
             }
 
             .timeline-container.right::before {
@@ -519,7 +519,7 @@
             }
            .timeline-container.left .content {
     margin-right: auto;
-    margin-left: 20px; 
+    margin-left: 50px; 
     text-align: left;
 }
 }
@@ -533,6 +533,7 @@
             font-style: normal;
 
         }
+
 
 
 
