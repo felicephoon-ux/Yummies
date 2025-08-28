@@ -515,20 +515,27 @@
     }
 
     .timeline::after {
-        left: 20px; /* 或者 left: 30px; 让竖线靠左一点 */
+        left: 20px; 
         margin-left: 0;
     }
 
     .timeline-container {
         width: 100%;
-        padding: 10px 20px; /* 调整左右间距 */
+        padding: 10px 20px; 
         left: 0 !important;
     }
 
     .timeline-container.left .content,
     .timeline-container.right .content {
-        margin: 0 0 20px 60px; /* 内容偏右，留给竖线和点的位置 */
+        margin: 0 0 20px 60px; 
     }
+
+.timeline-container::before {
+        top: 20px;
+        left: 20px; /* 点和竖线对齐 */
+        right: auto;
+    }
+}
 
 
         @font-face {
@@ -539,6 +546,7 @@
             font-style: normal;
 
         }
+
 
 
 
