@@ -509,33 +509,14 @@
                 padding: 5px 10px;
                 font-size: 14px;
             }
-            .timeline {
-        padding: 20px 0;
-        max-width: 100%;
-    }
+           .timeline-container.left::before {
+            right: -40px;
+        }
 
-    .timeline::after {
-        left: 20px; 
-        margin-left: 0;
-    }
-
-    .timeline-container {
-        width: 100%;
-        padding: 10px 20px; 
-        left: 0 !important;
-    }
-
-    .timeline-container.left .content,
-    .timeline-container.right .content {
-        margin: 0 0 20px 60px; 
-    }
-
-.timeline-container::before {
-        top: 20px;
-        left: 20px; /* 点和竖线对齐 */
-        right: auto;
-    }
-}
+        .timeline-container.right::before {
+            left: -15px;
+        }
+   }
 
 
         @font-face {
@@ -546,6 +527,7 @@
             font-style: normal;
 
         }
+
 
 
 
