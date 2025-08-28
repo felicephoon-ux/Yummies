@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUMMIES-Login</title>
+    <link rel="stylesheet" href="LoginPage.css">
+</head>
+
+<body>
+    <header>
+        <a href="HomePage.html" class="back-button">← Back</a>
+        <a href="HomePage.html" class="yummies-logo">
+            <img src="photo/YummiesLogo.jpeg" alt="YummiesLogo"></a>
+    </header>
+    <div class="login-container">
+        <h2>Login!</h2>
+        <form id="loginForm" class="loginForm">
+            <label for="name">Name</label>
+            <input type="text" class="name" required placeholder="Enter Your Name" />
+
+            <label for="email">Email</label>
+            <input type="email" class="email" required placeholder="Enter Your Email" />
+
+            <label for="password">Password</label>
+            <input type="password" class="password" required placeholder="Enter your password" />
+            <div class="error-message"></div>
+
+            <input type="submit" value="Login" class="formSubmit" />
+        </form>
+
+        <button class="clear-form">Clear All</button>
+        <p class="guest-login">Continue as a guest?</p>
+    </div>
+    <div class="formPopupOverlay" style="display:none;">
+        <div class="formPopupContent">
+            <h2 class="popup-title">Login Successful!</h2>
+            <p class="popup-message">Welcome to Our Website</p>
+            <br>
+            <button class="formPopupClose">Close</button>
+        </div>
+    </div>
+
+    <script>
+        const loginForm = document.querySelector(".loginForm");
+        const errorMessage = document.querySelector(".error-message");
+        const popup = document.querySelector(".formPopupOverlay");
+        const popupClose = document.querySelector(".formPopupClose");
+        const guestLogin = document.querySelector('.guest-login');
+        const clearFormButton = document.querySelector(".clear-form");
+        const popupTitle = document.querySelector(".popup-title");
+        const popupMessage = document.querySelector(".popup-message");
+
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = loginForm.querySelector(".name").value.trim();
+            const email = loginForm.querySelector(".email").value.trim();
+            const password = loginForm.querySelector(".password").value.trim();
+
+            errorMessage.textContent = "";
+
+            if (name === "") {
+                errorMessage.textContent = "Please enter your name.";
+                return;
+            }
+
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,}$/;
+            if (!email.match(emailPattern)) {
+                errorMessage.textContent = "Please enter a valid email address.";
+                return;
+            }
+
+            if (password.length < 8) {
+                errorMessage.textContent = "Password must be at least 8 characters.";
+                return;
+            }
+
+            popup.style.display = "flex";
+        });
+
+        guestLogin.addEventListener("click", function () {
+            popupTitle.textContent = "Guest Login";
+            popupMessage.textContent = "You are continuing as a guest";
+            popup.style.display = "flex";
+        });
+
+        popupClose.addEventListener("click", () => {
+            popup.style.display = "none";
+            window.location.href = "HomePage.html";
+        });
+
+        clearFormButton.addEventListener("click", function () {
+            loginForm.reset();
+            errorMessage.textContent = "";
+        });
+    </script>
+</body>
+
+</html>
