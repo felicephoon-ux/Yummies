@@ -511,8 +511,9 @@
             }
 
            body {
-                padding-left: 10px;
-                padding-right: 10px;
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%; 
                 box-sizing: border-box;
         }
 
@@ -524,6 +525,7 @@
             font-style: normal;
 
         }
+
 
 
 
